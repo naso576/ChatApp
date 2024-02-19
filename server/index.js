@@ -5,7 +5,8 @@ const http = require('http').Server(app);
 const PORT = 4000
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "https://naso576.github.io/ChatApp/"
+        origin: "https://naso576.github.io/ChatApp/",
+        methods: ["GET", "POST"]
     }
 });
 
